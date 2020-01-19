@@ -1,0 +1,10 @@
+[Unit]
+Description=Auto-adjust screen brightness
+Requires=basic.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/autobrightness-daemon
+
+[Install]
+WantedBy=multi-user.target graphical.target
